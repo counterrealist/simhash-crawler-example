@@ -1,0 +1,35 @@
+{
+    "name": "simhash-crawler-example",
+    "version": "1.0.0",
+    "description": "",
+    "main": "dist/main.js",
+    "types": "dist/main.d.ts",
+    "scripts": {
+        "start": "npm run start:dev",
+        "start:dev": "tsx src/main.ts",
+        "start:reportCheck": "tsx utils/reportsReader.ts data/results.json",
+        "start:prod": "node dist/main.js",
+        "build": "tsc",
+        "test": "jest"
+    },
+    "keywords": ["simhash"],
+    "author": "counterrealist <counterrealist@protonmail.com>",
+    "license": "MIT",
+    "type": "module",
+    "dependencies": {
+        "@counterrealist/simhash": "^1.0.1",
+        "@mozilla/readability": "^0.6.0",
+        "crawlee": "^3.13.8",
+        "playwright": "^1.53.1"
+    },
+    "devDependencies": {
+        "@types/jest": "^30.0.0",
+        "@types/node": "^24.0.4",
+        "jest": "^30.0.3",
+        "prettier": "^3.6.1",
+        "ts-jest": "^29.4.0",
+        "ts-node": "^10.9.2",
+        "tsx": "^4.20.3",
+        "typescript": "^5.8.3"
+    }
+}
